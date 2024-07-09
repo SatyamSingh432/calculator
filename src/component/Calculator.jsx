@@ -16,10 +16,13 @@ const Calculator = () => {
 
   const handleCalculate = () => {
     try {
+      if (!input) {
+        throw new Error("Error");
+      }
       const res = evaluate(input);
       setResult(res);
     } catch (error) {
-      setResult("Error");
+      setResult(error.message);
     }
   };
 
