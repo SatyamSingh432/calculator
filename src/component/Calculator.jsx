@@ -46,10 +46,10 @@ const Calculator = () => {
         <button onClick={() => handleClick("2")}>2</button>
         <button onClick={() => handleClick("3")}>3</button>
         <button onClick={() => handleClick("*")}>*</button>
+        <button onClick={handleClear}>C</button>
         <button onClick={() => handleClick("0")}>0</button>
         <button onClick={handleCalculate}>=</button>
         <button onClick={() => handleClick("/")}>/</button>
-        <button onClick={handleClear}>C</button>
       </div>
     </div>
   );
